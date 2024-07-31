@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="Styles/product2 check.css">
+    <link rel="stylesheet" href="styles/products2-header.css">
+    <link rel="stylesheet" href="styles/items.css">
+</head>
+<body>
+  <div class="body-container">
+    <div class="header">
+        <div class="left-panel">
+            <img class="dropbtn" src="icons/hamburger-menu.svg">
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="accounts.php">Accounts</a></li>
+                    <li><a href="Aboutus.html">About us</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>PRODUCTS </p>
+        <div class="icon-cart">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h1.5L8 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm.75-3H7.5M11 7H6.312M17 4v6m-3-3h6"/>
+            </svg>
+            <span>0</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section">
+          <button class="scroll-button" onclick="scrollLeft('phones-scroll')">←</button>
+          <div class="scroll-container" id="phones-scroll">
+          <div class="product">
+              <img src="products-pics/Huawei Mate X2.PNG" alt="Product 1">
+              <h2>Huawei Mate X3</h2>
+              <p>Ksh.18599</p><br>
+              <button onclick="addToCart('Huawei Mate X2', 18599.00, 'products-pics/Huawei Mate X2.PNG')">Add to Cart</button>
+          </div>
+          <div class="product">
+              <img src="products-pics/Samsung Galaxy S24.PNG" alt="Product 2">
+              <h2>Samsung Galaxy S24</h2>
+              <p>Ksh.73,000</p><br>
+              <button onclick="addToCart('Samsung Galaxy S24', 73000.00, 'products-pics/Huawei Mate X3.PNG')">Add to Cart</button>
+          </div>
+          <div class="product">
+              <img src="products-pics/IPhone 14.PNG" alt="Product 3">
+              <h2>IPhone 14</h2>
+              <p>Ksh.150,000</p><br>
+              <button onclick="addToCart('Iphone 14', 62000.00, 'products-pics/IPhone 14.PNG')">Add to Cart</button>
+          </div>
+              <div class="product">
+                  <img src="products-pics/Samsung Galaxy Z Flip 3.PNG" alt="Product 3">
+                  <h2>Galaxy Z Flip3</h2>
+                  <p>Ksh.58,000</p><br>
+                  <button onclick="addToCart('Samsung Galaxy Z Flip 3', 50000.00, 'products-pics/Samsung Galaxy Z Flip 3.PNG')">Add to Cart</button>
+              </div>
+              <div class="product">
+                  <img src="products-pics/OPPO Reno3.PNG" alt="Product 3">
+                  <h2>OPPO Reno3</h2>
+                  <p>Ksh.32,000</p><br>
+                  <button onclick="addToCart('OPPO Reno3', 328000.00, 'products-pics/OPPO Reno3.PNG')">Add to Cart</button>
+              </div>
+              <div class="product" data-id="6">
+                  <img src="products-pics/IPhone 12.PNG" alt="Product 3">
+                  <h2>IPhone 12</h2>
+                  <p>Ksh.58,000</p><br>
+                  <button onclick="addToCart('IPhone 12', 28000.00, 'products-pics/IPhone 12.PNG')">Add to Cart</button>
+              </div>
+              <div class="product" data-id="6">
+                  <img src="products-pics/Samsung Galaxy A05s.PNG" alt="Product 3">
+                  <h2>Samsung Galaxy A05s</h2>
+                  <p>Ksh.28,000</p><br>
+                  <button onclick="addToCart('Samsung Galaxy A05s', 23000.00, 'products-pics/Samsung Galaxy A05s.PNG')">Add to Cart</button>
+              </div>
+            </div>
+            <button class="scroll-button" onclick="scrollRight('phones-scroll')">→</button>
+          </div>
+          <div class="section">
+            <button class="scroll-button" onclick="scrollLeft('desktop-scroll')">←</button>
+            <iv class="scroll-container" id="desktop-scroll">
+            <div class="product">
+                <img src="products-pics/HP ELITEDESKTOP.PNG" alt="Product 3">
+                <h2>HP ELITEDESKTOP</h2>
+                <p>256gb 8GB RAM</p>
+                <p>Ksh.158,000</p><br>
+                <button onclick="addToCart('HP ELITEDESKTOP', 15000.00, 'products-pics/HP ELITEDESKTOP.PNG')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="products-pics/GAMING PC.PNG" alt="Product 3">
+                <h2>GAMING PC</h2>
+                <p>STGAubron 256gb 8GB RAM</p>
+                <p>Ksh.230,000</p><br>
+                <button onclick="addToCart('GAMING PC', 238000.00, 'products-pics/GAMING PC.PNG')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="products-pics/Dell i5.PNG" alt="Product 3">
+                <h2>DELL I5</h2>
+                <p>desktop 256gb 8GB RAM</p>
+                <p>Ksh.58,000</p><br>
+                <button onclick="addToCart('Dell i5', 50000.00, 'products-pics/Dell i5.PNG')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="products-pics/O ptiplex Desktop.PNG" alt="Product 3">
+                <h2>O ptiplex Desktop</h2>
+                <p>256gb storage 8GB RAM</p>
+                <p>Ksh.24,000</p><br>
+                <button onclick="addToCart('O ptiplex Desktop', 24000.00, 'products-pics/O ptiplex Desktop.PNG')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="products-pics/MAC PRO.PNG" alt="Product 3">
+                <h2>MAC PRO</h2>
+                <p>256gb storage 8GB RAM</p>
+                <p>Ksh.230,000</p><br>
+                <button onclick="addToCart('LMAC PRO', 230000.00, 'products-pics/MAC PRO.PNG')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="products-pics/Apple iMac.PNG" alt="Product 3">
+                <h2>Apple iMac</h2>
+                <p>256gb storage 8GB RAM</p>
+                <p>Ksh.250,000</p><br>
+                <button onclick="addToCart('Apple iMac', 250000.00, 'products-pics/Apple iMac.PNG')">Add to Cart</button>
+            </div>
+        </div>
+        <button class="scroll-button" onclick="scrollRight('desktop-scroll')">→</button>
+      </div>
+          
+      <div class="section" id="section-one">
+        <button class="scroll-button" onclick="scrollLeft('laptop-scroll')">←</button>
+        <div class="scroll-container" id="laptop-scroll">
+            <div class="product">
+                <img src="products-pics/LENOVO laptop.PNG" alt="Product 3">
+                <h2>LENOVO laptop</h2>
+                <p>Notebook pc 5th Gen</p>
+                <p>Ksh.28,000</p><br>
+                <button onclick="addToCart('LENOVO laptop', 28000.00, 'products-pics/LENOVO laptop.PNG')">Add to Cart</button>
+            </div><div class="product">
+                <img src="products-pics/HP I5 Laptop.PNG" alt="Product 3">
+                <h2>HP I5 Laptop</h2>
+                <p>Notebook pc 256GB</p>
+                <p>Ksh.42,000</p><br>
+                <button onclick="addToCart('HP I5 Laptop', 42000.00, 'products-pics/HP I5 Laptop.PNG')">Add to Cart</button>
+            </div><div class="product">
+                <img src="products-pics/MACBOOK PRO.PNG" alt="Product 3">
+                <h2>MACBOOK PRO</h2>
+                <p>256GB 8GB RAM</p>
+                <p>Ksh.148,000</p><br>
+                <button onclick="addToCart('MACBOOK PRO', 14000.00, 'products-pics/MACBOOK PRO.PNG')">Add to Cart</button>
+            </div><div class="product">
+                <img src="products-pics/HP Elitebook.PNG" alt="Product 3">
+                <h2>HP Elitebook</h2>
+                <p>Notebook PC 5th Gen</p>
+                <p>Ksh.38,000</p><br>
+                <button onclick="addToCart('HP Elitebook', 38000.00, 'products-pics/HP Elitebook.PNG')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="products-pics/HP Omen i5.PNG" alt="Product 3">
+                <h2>HP Omen i5</h2>
+                <p>256gb with 8GB RAM</p>
+                <p>Ksh.26,000</p><br>
+                <button onclick="addToCart('HP Omen i5', 26000.00, 'products-pics/HP Omen i5.PNG')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="products-pics/MacBook Pro 13.PNG" alt="Product 3">
+                <h2>MacBook Pro M3</h2>
+                <p>Ksh.358,990</p><br>
+                <button onclick="addToCart('MacBook Pro M3', 28000.00, 'products-pics/MacBook Pro 13.PNG')">Add to Cart</button>
+            </div>
+        </div>
+        <button class="scroll-button" onclick="scrollRight('laptop-scroll')">→</button>
+      </div>
+      <div class="section">
+        <button class="scroll-button" onclick="scrollLeft('mouse-scroll')">←</button>
+        <div class="scroll-container" id="mouse-scroll">
+            <div class="product">
+                <img src="products-pics/LOGILINK.PNG" alt="Product 3">
+                <h2>LOGILINK Optical mouse</h2>
+                <p>Ksh.1,200</p><br>
+                <button onclick="addToCart('IPhone 12', 28000.00, 'products-pics/IPhone 12.PNG')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="products-pics/24G Wireless.PNG" alt="Product 3">
+                <h2>24G Wireless</h2>
+                <p>Gaming Mouse</p>
+                <p>Ksh.2,500</p><br>
+                <button onclick="addToCart('24G Wireless Gaming Mouse', 2500.00, 'products-pics/24G Wireless.PNG')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="products-pics/Wireless mouse.PNG" alt="Product 3">
+                <h2>Wireless Mouse</h2>
+                <p>Ksh.780</p><br>
+                <button onclick="addToCart('Wireless mouse', 780.00, 'products-pics/Wireless mouse.PNG')">Add to Cart</button>
+           </div>
+            <div class="product">
+                <img src="products-pics/Hp Wireless Keyboad.PNG" alt="Product 3">
+                <h2>Hp Wireless Keyboad</h2>
+                <p>Ksh.3,500</p><br>
+                <button onclick="addToCart('Hp Wireless Keyboad', 3500.00, 'products-pics/Hp Wireless Keyboad.PNG')">Add to Cart</button>
+            </div>
+           <div class="product">
+                <img src="products-pics/Logitech Keyboard.PNG" alt="Product 3">
+                <h2>Logitech Keyboard</h2>
+                <p>Ksh.2,400</p><br>
+                <button onclick="addToCart('Logitech Keyboard', 2400.00, 'products-pics/Logitech Keyboard.PNG')">Add to Cart</button>
+           </div>
+           <div class="product">
+            <img src="products-pics/Gaming Keyboard.PNG" alt="Product 3">
+            <h2>Gaming Keyboard</h2>
+            <p>Ksh.3,600</p><br>
+            <button onclick="addToCart('Gaming Keyboard', 3600.00, 'products-pics/Gaming Keyboard.PNG')">Add to Cart</button>
+       </div>
+        <button class="scroll-button" onclick="scrollRight('desktop-scroll')">→</button>
+      </div>
+</div>
+</div>
+     
+  </div>
+  <div class="cartTab">
+      <h1>Shopping Cart</h1>
+      <div id="cart">
+          <p>No items in cart.</p><br>
+      </div>
+      <div class="btn">
+          <button class="close">CLOSE</button>
+          <button class="checkOut" id="checkout-btn">Checkout</button>
+      </div>    
+  </div>
+  
+  <script src="Javascript/product2 check.js">
+    
+    function scrollLeft(containerId) {
+    const container = document.getElementById(containerId);
+    container.scrollBy({
+      left: -container.clientWidth,
+      behavior: 'smooth'
+    });
+  }
+
+  function scrollRight(containerId) {
+    const container = document.getElementById(containerId);
+    container.scrollBy({
+      left: container.clientWidth,
+      behavior: 'smooth'
+    });
+  }
+  </script>
+</body>
+</html>

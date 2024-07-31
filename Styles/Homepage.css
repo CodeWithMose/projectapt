@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+
+}
+body {
+  background: url('background.jpg');
+  background-size: cover;
+}
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.logo{
+  font-size: 2em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.logo span{
+  color:#fe05e9;
+}
+.navbar {
+  flex: 1;
+  text-align: right;
+}
+.navbar ul li{
+  position: relative;
+  padding: 8px 12px;
+  display:inline-block;
+}
+.navbar a{
+  text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: 0.5s;
+}
+.navbar a:hover{
+  background-color: #fe05e9;
+  border-radius: 5px;
+}
+.text{
+  display: inline-block;
+  max-width: 600px;
+  padding: 85px 85px;
+  color: #fff;
+  position: relative;
+  align-items: center;
+  
+}
+.text h1{
+  font-size:60px;
+  margin-bottom: 20px;
+}
+.text span{
+  color: #fe05e9;
+}
+.text p{
+  margin: 10px 0 20px;
+  font-size: 28px;
+  font-weight: 0;
+}
+
+.img{
+  width: 410px;
+ height: 410px;
+ display: inline-block;
+ position: relative;
+ left: 20%;
+ padding-top: 80px;
+ 
+}
+.cercle{
+  width: 100%;
+  height: 100%;
+  background: #fe05e9;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.cercle span{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(#fe05e9,rgb(255, 38, 0));
+  filter: blur(5px);
+  animation: cercle 2s linear infinite;
+}
+@keyframes cercle {
+  100%{
+    transform: : rotate(360deg);
+  }
+}
+.cercle::after{
+  content:"";
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  background: #0c1022;
+  border-radius: 50%;
+}
+.cercle .image{
+  position: relative;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  z-index: 1;
+  overflow: hidden;
+}
+.cercle img{
+  position: absolute;
+  left: 50%;
+  top:0px;
+  transform: translateX(-50%);
+  max-width: 524px;
+  object-fit: cover;
+}
+.profpic {
+ height: 400px;
+ width: 400px;
+}
+.body-area{
+  display: flex;
+  padding-top: 80px;
+  align-items: center;
+
+}
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}

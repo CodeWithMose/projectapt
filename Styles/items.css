@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.scroll-button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: none;
+  margin: 0 10px;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  width: 90%;
+}
+
+.product {
+  flex: 0 0 auto;
+  width: 20%; 
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+}
+.product {
+  flex: 1 1 33.33%; /* 3 products per row on medium screens */
+}
+
+.section{
+  border-radius: 20px;
+  background: url('background2.jpg');
+  
+}
+.product button{
+  background-color: greenyellow;
+  margin-top: 0;
+}

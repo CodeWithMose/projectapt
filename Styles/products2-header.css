@@ -1,0 +1,71 @@
+.left-panel{
+  background-color: #f1f1f1;
+}
+
+.left-panel img {
+  height: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  padding-top: 20px;
+}
+.header p{
+   font-weight: bold;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 34px;
+   margin-top: 0;
+ 
+   margin-left: -490px;
+}
+.header .icon-cart{
+  position: relative;
+  right: 30px;
+}
+.header .icon-cart svg{
+  height: 50px;
+  
+}
+.header .icon-cart span{
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: -13px;
+  top: -5px;
+}
+.navbar li a:hover, .dropdown:hover .dropbtn {
+  background-color: #111;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.left-panel:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  color: rgb(240, 233, 233);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #111;
+}
