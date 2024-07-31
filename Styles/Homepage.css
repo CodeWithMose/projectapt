@@ -6,8 +6,9 @@
 
 }
 body {
-  background: url('background.jpg');
+  background: url('photos/background2.jpg');
   background-size: cover;
+  filter: brightness(50%);
 }
 nav{
   display: flex;
